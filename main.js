@@ -1,8 +1,6 @@
 import { fetchRestaurantData, fetchMenuAndshowModal, removeHighlight} from './utils.js';
   
   
-  
-  
   document.addEventListener('DOMContentLoaded', function() {
     fetchRestaurantData().then(restaurants => {
       populateRestaurantList(restaurants);
