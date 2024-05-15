@@ -89,8 +89,6 @@ const fetchMenus = async (restaurant) => {
     return Promise.all(responses.map(res => res.json()));
 }
 
-
-
 // SHOW MODAL V2
 const showModal = async (restaurant, dailyMenu, weeklyMenu) => {
     const modal = document.getElementById('restaurantDetailsModal');
