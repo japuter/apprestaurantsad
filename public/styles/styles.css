@@ -1,0 +1,318 @@
+  body {
+      background-color: rgba(77, 176, 247, 0.2);
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+  /* Styling for the navbar */
+  .navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .navbar a {
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+
+  .navbar a:hover {
+    background-color: #555;
+  }
+
+  /* Aligning links to the left and right */
+  .nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .nav-right {
+    align-self: center;
+  }
+  
+  /* Styling for the restaurants table */
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  th {
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+    font-weight: normal;
+    padding: 0.5em 1em;
+    text-align: left;
+  }
+  
+  td {
+    border-bottom: 1px solid #ccc;
+    padding: 0.5em 1em;
+  }
+
+  .highlight {
+    background-color: rgba(77, 176, 247, 1) !important; 
+    font-weight: bold;
+  }
+
+table  tr:nth-child(odd) {
+  background-color: rgba(77, 176, 247, 0.5);
+}
+
+.restaurant-header {
+  text-align: center;
+}
+
+#main-table-body {
+  margin: 0 auto;
+  width: 80%;
+}
+
+#main-table-body tr:hover {
+  cursor: pointer;
+}
+
+#restaurant-table {
+  width: 100%;
+}
+
+#map {
+  height: 400px;
+  width: 50%;
+  margin: auto;
+}
+
+
+  /* Styling for the dialog/modal */
+dialog {
+  width: 75%;
+  height: 50%;
+}
+
+#restaurantDetailsModal {
+  text-align: center;
+  border: 0;
+}
+
+#closeModal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  background-color: transparent;
+
+}
+
+#closeModal:hover {
+  color: red;
+}
+
+/* Style for the container of the menu */
+.menu {
+  max-width: 600px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Basic styling for the details element */
+details.day-menu {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Styling for the summary element, which is the clickable part */
+details.day-menu summary {
+  padding: 10px 15px;
+  color: #333;
+  cursor: pointer;
+  outline: none;
+  list-style: none;
+  font-size: 18px;
+}
+
+/* Changes when the details element is opened */
+details.day-menu[open] {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+details.day-menu[open] summary {
+  color: #0056b3;
+}
+
+/* Styling for each menu item within the dropdown */
+.menu-item {
+  padding: 10px 15px;
+  border-top: 1px solid #eee;
+  color: #666;
+}
+
+/* Removes the top border for the first item to maintain clean design */
+.menu-item:first-child {
+  border-top: none;
+}
+
+/* Transition for expanding/collapsing the details */
+details.day-menu[open] summary ~ * {
+  animation: slideDown 0.2s ease-in-out;
+}
+
+/* Keyframes for the dropdown animation */
+@keyframes slideDown {
+  0% {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Form container styling */
+.form-container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+
+/* Styling for login/registration form elements: input and button */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type="button"] {
+  width: 100%;
+  background-color: rgb(44, 204, 209);
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="button"]:hover {
+  background-color: rgb(19, 80, 82);
+  color: white;
+
+}
+
+#registrationForm {
+  width: 30%;
+  margin: auto;
+}
+#profileForm {
+  width: 30%;
+  margin: auto;
+}
+.title {
+  text-align: center;
+}
+
+
+
+/* EDIT PROFILE TOOL TIP STYLES */
+
+.profile-link {
+  position: relative;
+  display: inline-block; /* Ensure the anchor behaves as an inline element with block features */
+}
+
+/* Tooltip styling */
+.tooltip {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top: 110%; /* Position below the image */
+  left: 50%;
+  margin-left: -60px; /* Center the tooltip */
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+/* Tooltip arrow (now pointing upwards) */
+.tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: 100%; /* At the top of the tooltip now */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent; /* Adjusted to point upwards */
+}
+
+
+/* Show tooltip when hovering over the link */
+.profile-link:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* FAVORITE BUTTON STYLES */
+
+.favorite-btn {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.favorite-btn.favorite {
+  color: gold;
+}
+
+.profile-info-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-info-container > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px; /* Adjust the margin as needed */
+}
+
+.profile-info-container label {
+  margin-bottom: 5px; /* Add space between label and content */
+}
+
+.profile-info-container p, .profile-info-container img {
+  margin-top: 5px; /* Add space between content and the next label */
+}

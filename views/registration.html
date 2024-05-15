@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../public/styles/styles.css" />
+    <script src="../public/scripts/app.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+        </div>
+        <div class="nav-right">
+            <a href="login.html">Login</a>
+            <a href="registration.html">Register</a>
+        </div>
+      </nav>
+    <h2 class="title">Register</h2>
+    <form id="registrationForm">
+        <input type="text" id="registerName" placeholder="Name" required><br>
+        <input type="text" id="regUsername" placeholder="Username (used to login)" required><br>
+        <input type="password" id="regPassword" placeholder="Password" required><br>
+        <button type="button" onclick="register()">Register</button>
+
+    </form>
+</body>
+</html>

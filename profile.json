@@ -1,0 +1,28 @@
+{
+    "users": [
+        {
+            "username": "admin",
+            "password": "VGhpc0lszTm90QVNlY3VyZUhhc2g=",
+            "name": "John Doe",
+            "phone": "123-456-7890",
+            "photo": "",
+            "favorites": ["restaurant1", "restaurant2", "restaurant5"]
+        },
+        {
+            "username": "janedoe",
+            "password": "QW5vdGhlckluc2VjdXJlSGFzaA==",
+            "name": "Jane Doe",
+            "phone": "987-654-3210",
+            "photo": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD...",
+            "favorites": ["restaurant3"]
+        },
+        {
+            "username": "aliceblue",
+            "password": "RXhhbXBsZUhzaGFzaA==",
+            "name": "Alice Blue",
+            "phone": "555-234-5678",
+            "photo": "",
+            "favorites": []
+        }
+    ]
+}

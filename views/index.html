@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Project</title>
+    <!-- Load styles -->
+    <link rel="stylesheet" href="../public/styles/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!-- Load scripts -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="../public/scripts/api.js" type="module" defer></script>
+    <script src="../public/scripts/app.js" defer></script>
+
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="nav-left">
+          <a href="index.html">Home</a>
+      </div>
+      <div class="nav-right">
+          <a href="login.html">Login</a>
+          <a href="registration.html">Register</a>
+      </div>
+    </nav>
+    <h1 class="restaurant-header">Restaurants</h1>
+    <table id="main-table-body">
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+      </tr>
+      <!-- add restaurants here -->
+    </table>
+
+    <dialog id="restaurantDetailsModal">
+      <button id="closeModal">X</button>
+      <div id="map"></div>
+
+      <div id="modalContent">
+      </div>
+    </dialog>
+
+  </body>
+
+</html>

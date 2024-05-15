@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile</title>
+    <link rel="stylesheet" href="../public/styles/styles.css" />
+    <script src="../public/scripts/app.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="index.html">Home</a>
+      </div>
+      <div class="nav-right">
+        <a href="login.html">Login</a>
+        <a href="registration.html">Register</a>
+      </div>
+    </nav>
+    <h1 class="title">Edit Profile</h1>
+    <form id="profileForm">
+      <div class="profile-info-container">
+        <div>
+          <label for="profileName">Account owner: </label>
+          <p id="profileName" alt="profile name"></p>
+        </div>
+        <div>
+          <label for="profileUsername">Account username: </label>
+          <p id="profileUsername" alt="profile username"></p>
+        </div>
+        <div>
+          <label for="displayPhoto">Account profile picture: </label>
+          <img id="profileDisplayPhoto" alt="profile picture" />
+        </div>
+      </div>
+
+      <label for="name">Change Name (not username):</label>
+      <input type="text" id="name" required /><br />
+      <label for="newPassword">Change Password:</label>
+      <input type="password" id="newPassword" required /><br />
+      <label for="profilePhoto">Upload Profile Photo:</label>
+      <input type="file" id="profilePhoto" accept="image/*" /><br />
+      <button type="button" onclick="updateName();">Change Name</button>
+      <button type="button" onclick="updatePassword();">Change Password</button>
+      <button type="button" onclick="updateProfilePic();">
+        Upload Profile Picture
+      </button>
+      <button type="button" style="background-color: rgb(77, 218, 53);" onclick="window.location.reload();">CLICK HERE TO SEE THE CHANGES</button>
+      
+    </form>
+  </body>
+</html>
